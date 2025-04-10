@@ -1,0 +1,180 @@
+/* Tablet Styles */
+@media (max-width: 992px) {
+    .big-title {
+        font-size: 48px;
+    }
+
+    .services-grid, .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .slider-item {
+        flex: 0 0 calc(33.33% - 16px);
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo, .footer-info, .footer-buttons {
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .site-header {
+        padding: 15px 0;
+    }
+
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        /* background-color: rgba(0, 0, 0, 0.9); */
+        padding: 20px 0;
+    }
+
+    .main-nav.active {
+        display: block;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav ul li {
+        margin: 15px 0;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .big-title {
+        font-size: 36px;
+    }
+
+    .hero-content .subtitle {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+    }
+
+    .services-grid, .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .slider-item {
+        flex: 0 0 calc(100% - 16px);
+    }
+
+    .convenience-section, .environment-section, .exclusive-section, .events-section, .avenue-section {
+        padding: 60px 0;
+    }
+
+    .environment-section {
+        background-image: url('./images/envr-mobile.png');
+        background-size: cover;
+        background-position: center;
+        height: 640px;
+
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .hero-content {
+        padding-top: 80px;
+    }
+
+    .big-title {
+        font-size: 32px;
+    }
+
+    .hero-content .subtitle {
+        font-size: 18px;
+    }
+
+    .hero-content .description {
+        font-size: 14px;
+    }
+
+    .btn-primary, .btn-outline {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .service-info, .benefit-info, .event-info, .news-info {
+        padding: 16px;
+    }
+
+    .service-info h3, .benefit-info h3, .event-info h3, .news-info h3 {
+        font-size: 16px;
+    }
+
+    .service-info p, .benefit-info p, .event-info p, .news-info p {
+        font-size: 12px;
+    }
+
+    .event-date, .news-date {
+        font-size: 12px;
+    }
+
+    .footer-logo h2 {
+        font-size: 20px;
+    }
+
+    .footer-info p {
+        font-size: 12px;
+    }
+
+    .footer-buttons {
+        flex-direction: column;
+    }
+
+    .footer-buttons .btn-outline {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* Portrait Mobile Styles */
+@media (max-height: 700px) and (max-width: 768px) {
+    .hero-section {
+        background-image: url('./images/bg-mobile.png');
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        min-height: 600px;
+    }
+}
+
+/* Mobile Menu Animation */
+@media (max-width: 768px) {
+    .mobile-menu-toggle.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .mobile-menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}
